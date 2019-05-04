@@ -1,14 +1,9 @@
 const express = require('express');
-//const bodyParser = require('body-parser');
-//const dataJson = require('data.json');
-const { projects }= require('./data.json');
-
+const { projects } = require('./data.json');
 
 const app = express();
 
 /**** Set up middleware ****/
-
-//app.use(bodyParser.urlencoded({ extended: false}));
 
 // use a static route and the express.static method to serve the static files located in the public folder
 app.use('/static', express.static('public'));
@@ -16,13 +11,11 @@ app.use('/static', express.static('public'));
 // set your “view engine” to “pug”
 app.set('view engine', 'pug');
 
-
 /**** Set routes ****/
 
 // An "index" route (/) to render the "Home" page with the locals set to data.projects
 app.get('/', (req, res, next) => {
-    app.locals = data.projects;
-    res.render('index');
+    res.render('index', { projects }  );
     next();
 });
 
@@ -37,10 +30,11 @@ app.get('/about', (req, res, next) => {
 // render a customized version of the Pug project template to show off each project. 
 // Which means adding data, or "locals", as an object that contains data to be passed to the Pug template.
 
-app.get('/project', (req, res, next) => {
-    res.render('project');
-    next();
-});
+app.get('/project/:id', ( req, res, next ) => {
+    const { id } = req.params;
+    const data = projects[id];
+    res.render( 'project', { data } );
+  });
 
 
 app.listen(3000, () => {
