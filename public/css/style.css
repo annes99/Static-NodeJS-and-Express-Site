@@ -1,11 +1,11 @@
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+  /* font-family: 'Merriweather', serif; */
 }
 
   h5{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    letter-spacing: 2.5px;
+    /* font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+    letter-spacing: 2.5px; 
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
   }
@@ -58,7 +58,8 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
+  /* background: #121213; */
+  background: #fff;
   color: #fff;
   box-shadow: none !important;
 }
@@ -69,7 +70,7 @@ a:hover{
   }
 
   .portfolio-me a{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
     font-weight: 600;
     color: #555;
     font-size: 13px;
@@ -89,7 +90,7 @@ a:hover{
 }
 
  .portfolio-breadcrumb a{
-   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   /* font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
    font-weight: 600;
    font-size: 13px;
    letter-spacing: 2.5px;
@@ -147,4 +148,9 @@ a:hover{
 
 .portfolio-bio{
     line-height: 25px;
+}
+
+body {
+  background: rgb(245,247,250);
+  font-family: 'Montserrat', sans-serif;
 }

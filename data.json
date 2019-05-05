@@ -59,7 +59,7 @@
         {
             "id": 4,
             "project_name": "A Random Quote Generator",
-            "description": "App that displays random quote each time a button is clicked.",
+            "description": "App that displays random quote each time a button is clicked. When quote changes, background color changes randomly. Quote is auto-refreshed every 20s",
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://annes99.github.io/A-Random-Quote-Generator/",
             "github_link": "https://github.com/annes99/A-Random-Quote-Generator",
