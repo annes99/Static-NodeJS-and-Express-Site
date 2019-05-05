@@ -1,13 +1,13 @@
 extends layout.pug
 
 block content
-    nav.grid-container.portfolio-breadcrumb
-        a(href='/') ← Back
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
 
-    h3 oops, something went wrong
-    p= `${error.message} - Error ${error.status}`
+  h3.colorB oops, something went wrong
 
-    
-    .paper
-    pre.stack-trace= error.stack
-    .tear
+  p= `${error.message} - Error ${error.status}`
+
+  .paper
+  pre.stack-trace= error.stack
+  .tear

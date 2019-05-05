@@ -18,43 +18,43 @@ app.set('view engine', 'pug');
 
 // '/' route render the index page with the locals set to properties
 app.get('/', (req, res) => {
-    res.render('index', { projects }  );
+  res.render('index', { projects });
 });
 
 // '/about' route to render the "About" page
 app.get('/about', (req, res) => {
-    res.render('about');
+  res.render('about');
 });
 
 // '/project' route to dynamically change based on projects id
 // if id is in the range of actual projects then render 'project'
 // else => next() render 'error'
 app.get('/project/:id', (req, res, next) => {
-    const { id } = req.params;
-    const data = projects[id];
+  const { id } = req.params;
+  const data = projects[id];
 
-    if(id >= 0 && id < projects.length) {
-       res.render( 'project', { data } );
-    } else {
-        next();
-    }
-  });
+  if (id >= 0 && id < projects.length) {
+    res.render('project', { data });
+  } else {
+    next();
+  }
+});
 
 /**** error handling ****/
 
 // for non-existent route render 'error'
 app.use((req, res, next) => {
-    const err = new Error('Page not found');
-    err.status = 404;
-    next(err);
-  });
-  
-  app.use((err, req, res) => {
-    res.locals.error = err;
-    res.status(err.status);
-    res.render('error');
-  });
+  const err = new Error('Page not found');
+  err.status = 404;
+  next(err);
+});
+
+app.use((err, req, res, next) => {
+  res.locals.error = err;
+  res.status(err.status);
+  res.render('error');
+});
 
 app.listen(port, () => {
-    console.log(`The application is running on localhost: ${port}`);
+  console.log(`The application is running on localhost: ${port}`);
 });
