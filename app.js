@@ -53,6 +53,7 @@ app.use((err, req, res, next) => {
   res.locals.error = err;
   res.status(err.status);
   res.render('error');
+  console.log('Page not found - Error', err.status)
 });
 
 app.listen(port, () => {
