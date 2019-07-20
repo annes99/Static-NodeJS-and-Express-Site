@@ -2,86 +2,128 @@
     "projects": [
         {
             "id": 0,
+            "project_name": "Full Stack App with React and a REST API",
+            "description": "The full stack application will provide a way for users to administer a school database containing information about courses: users can interact with the database by retrieving a list of courses, viewing detail for a specific course, as well as creating, updating and deleting courses in the database. In addition, the project will require users to create an account and sign in to make changes to the database.",
+            "technologies": ["JavaScript", "React", "SQL", "ORM Sequelize", "Node.js",  "Express", "npm"],
+            "live_link": "https://github.com/annes99/Full-Stack-App-with-React-and-a-REST-API", 
+            "github_link": "https://github.com/annes99/Full-Stack-App-with-React-and-a-REST-API",
+            "image_urls": [
+                "static/img/fsj/fsj_thb.jpg",
+                "static/img/fsj/fsj1200_1.jpg",
+                "static/img/fsj/fsj1200_2.jpg",
+                "static/img/fsj/fsj1200_3.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "SQL Library Manager",
+            "description": "Application for library to help them manage their collection of books. App that'll include pages to list, add, update, and delete books.",
+            "technologies": ["JavaScript", "SQL", "ORM Sequelize", "Express", "Pug",  "CSS", "HTML"],
+            "live_link": "https://sql-library-p8.herokuapp.com/", 
+            "github_link": "https://github.com/annes99/SQL-Library-Manager",
+            "image_urls": [
+                "static/img/sql/sql_thb.jpg",
+                "static/img/sql/sql1200_1.jpg",
+                "static/img/sql/sql1200_2.jpg",
+                "static/img/sql/sql1200_3.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "project_name": "React Gallery App",
+            "description": "An image gallery app using React and the handy Create React App tool to build a fast and lightweight gallery app with a modern approach.",
+            "technologies": ["JavaScript", "React.js", "CSS", "HTML"],
+            "live_link": "https://reactgallery.netlify.com/", 
+            "github_link": "https://github.com/annes99/React-Gallery-App",
+            "image_urls": [
+                "static/img/gallery/gallery_thb.jpg",
+                "static/img/gallery/gallery1200_1.jpg",
+                "static/img/gallery/gallery1200_2.jpg",
+                "static/img/gallery/gallery1200_3.jpg"
+            ]
+        },
+        {
+            "id": 3,
             "project_name": "Static Node.js and Express Site",
             "description": "Portfolio site made with Node.js, Express and Pug, setting up a server, handling requests, working with server-side JavaScript, and building a powerful and modern back end project. Pug templates & JSON to generate the markup that is ultimately displayed in the browser.",
             "technologies": ["JavaScript", "Node.js", "Express", "Pug", "CSS", "HTML"],
             "live_link": "https://p6-test.herokuapp.com/", 
             "github_link": "https://github.com/annes99/Static-NodeJS-and-Express-Site",
             "image_urls": [
-                "static/img/portfolio/portfoilio_thb.png",
-                "static/img/portfolio/portfolio1200_1.png",
-                "static/img/portfolio/portfolio1200_2.png",
-                "static/img/portfolio/portfolio1200_3.png"
+                "static/img/portfolio/portfoilio_thb.jpg",
+                "static/img/portfolio/portfolio1200_1.jpg",
+                "static/img/portfolio/portfolio1200_2.jpg",
+                "static/img/portfolio/portfolio1200_3.jpg"
             ]
         },
         {
-            "id": 1,
+            "id": 4,
             "project_name": "Public API Requests",
             "description": "An app for a fictional company called Awesome Startup, a distributed company with remote employees working all over the world. They need a smart way for employees to share contact information with each other. Using the Random User Generator API (https://randomuser.me/) to grab information for 12 random “employees” and using that data to build a prototype for an Awesome Startup employee directory. Modal window displays extended details",
             "technologies": ["JavaScript", "jQuery 3.4.0", "CSS", "HTML"],
             "live_link": "https://annes99.github.io/Public-API-Requests/", 
             "github_link": "https://github.com/annes99/Public-API-Requests",
             "image_urls": [
-                "static/img/api/api_thb.png",
-                "static/img/api/api1200_1.png",
-                "static/img/api/api1200_2.png",
-                "static/img/api/api1200_3.png"
+                "static/img/api/api_thb.jpg",
+                "static/img/api/api1200-1.jpg",
+                "static/img/api/api1200-2.jpg",
+                "static/img/api/api1200-3.jpg"
             ]
         },
         {
-            "id": 2,
+            "id": 5,
             "project_name": "OOP Game Show App",
             "description": "Browser-based, word guessing game: \"Phrase Hunter.\" Using JavaScript and Object-Oriented Programming to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard or physical computer keyboard.",
             "technologies": ["JavaScript", "jQuery 3.4.0", "CSS", "HTML"],
             "live_link": "https://annes99.github.io/OOP-Game-Show-App/",
             "github_link": "https://github.com/annes99/OOP-Game-Show-App",
             "image_urls": [
-                "static/img/game/game_thb.png",
-                "static/img/game/game1200_1.png",
-                "static/img/game/game1200_2.png",
-                "static/img/game/game1200_3.png"
+                "static/img/game/game_thb.jpg",
+                "static/img/game/game1200_1.jpg",
+                "static/img/game/game1200_2.jpg",
+                "static/img/game/game1200_3.jpg"
             ]
         },
         {
-            "id": 3,
+            "id": 6,
             "project_name": "Interactive Form",
             "description": "Interactive registration form enhanced with JavaScript &  jQuery. Validating user input only with JavaScript. Form provides error message that changes depending on the error (email) or in real time.",
             "technologies": ["JavaScript", "jQuery 3.4.0", "CSS", "HTML"],
             "live_link": "https://annes99.github.io/Interactive-Form/",
             "github_link": "https://github.com/annes99/Interactive-Form",
             "image_urls": [
-                "static/img/form/form_thb.png",
-                "static/img/form/form1200_1.png",
-                "static/img/form/form1200_2.png",
-                "static/img/form/form1200_3.png"
+                "static/img/form/form_thb.jpg",
+                "static/img/form/form1200_1.jpg",
+                "static/img/form/form1200_2.jpg",
+                "static/img/form/form1200_3.jpg"
             ]
         },
         {
-            "id": 4,
+            "id": 7,
             "project_name": "List Pagination and Filtering",
             "description": "Web page list pagination, filtering & search with \"vanilla\" JavaScript. Includes searchbar to filter items from list. Displays clickable navigation links, showing max 10 items at a time. Flexible design, works with lists of diffierent lengths. Displays a message if no matches are found.",
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://annes99.github.io/List-Pagination-and-Filtering",
             "github_link": "https://github.com/annes99/List-Pagination-and-Filtering",
             "image_urls": [
-                "static/img/filter/filter_thb.png", 
-                "static/img/filter/filter1200_1.png",
-                "static/img/filter/filter1200_2.png",
-                "static/img/filter/filter1200_3.png"
+                "static/img/filter/filter_thb.jpg", 
+                "static/img/filter/filter1200_1.jpg",
+                "static/img/filter/filter1200_2.jpg",
+                "static/img/filter/filter1200_3.jpg"
             ]
         },
         {
-            "id": 5,
+            "id": 8,
             "project_name": "A Random Quote Generator",
             "description": "App that displays random quote each time a button is clicked. When quote changes, background color changes randomly. Quote is auto-refreshed every 20s",
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://annes99.github.io/A-Random-Quote-Generator/",
             "github_link": "https://github.com/annes99/A-Random-Quote-Generator",
             "image_urls": [
-                "static/img/random_quote/random_thb.png",
-                "static/img/random_quote/random1200_1.png",
-                "static/img/random_quote/random1200_2.png",
-                "static/img/random_quote/random1200_3.png"
+                "static/img/random_quote/random_thb.jpg",
+                "static/img/random_quote/random1200_1.jpg",
+                "static/img/random_quote/random1200_2.jpg",
+                "static/img/random_quote/random1200_3.jpg"
             ]
         }
     ]
